@@ -1,5 +1,5 @@
 Flasks
-Flask-Cors==3.0.10
-numpy==1.24.3
-pandas==2.0.1
-searchgrid==0.2.0
+Flask-Cors
+numpy
+pandas
+searchgrid
