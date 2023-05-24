@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>AReM</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+
+<div class="login-box">
+  <h2>AReM</h2>
+  <form action="/predict" method="POST">
+    <div class="user-box">
+      <input type="number" name="time" required>
+      <label>Time</label>
+    </div>
+    <div class="user-box">
+      <input type="number" name="avg_rss12" required>
+      <label>Avg_rss12</label>
+    </div>
+    <div class="user-box">
+      <input type="number" name="var_rss12" required>
+      <label>Var_rss12</label>
+    </div>
+    <div class="user-box">
+      <input type="number" name="avg_rss13" required>
+      <label>Avg_rss13</label>
+    </div>
+    <div class="user-box">
+      <input type="number" name="var_rss13" required>
+      <label>Var_rss13</label>
+    </div>
+    <div class="user-box">
+      <input type="number" name="avg_rss23" required>
+      <label>Avg_rss23</label>
+    </div>
+    <div class="user-box">
+      <input type="number" name="var_rss23" required>
+      <label>Var_rss23</label>
+    </div>
+    <center>
+      <button type="submit">
+        Submit
+      </button>
+    </center>
+  </form>
+</div>
+
+</body>
+</html>
