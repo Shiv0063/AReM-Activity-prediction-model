@@ -10,45 +10,61 @@
   <!-- partial:index.partial.html -->
   <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="../static/css/stars.css">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/stars.css') }}">
+  <style>
+    .fgh::placeholder {
+        color: #fff;
+      }
+  </style>
 </head>
 
-<body class="p-2 m-3" style="background: #000;">
-  <div id='stars'></div>
-  <div id='stars2'></div>
-  <div id='stars3'></div>
+<body class="p-2 m-md-3 pt-md-3" id="bgmain">
   <div class="container-fluid">
     <div class="row justify-content-center">
-      <div class="col-md-7 border border-primary-subtle rounded">
-        <h1 class="text-center text-light mt-3 mb-3">AReM Prediction</h1>
+      <div class="col-md-6 mt-md-5">
+        <br>
+        <div class="mt-md-5">
+          <center>
+            <img src="../static/img/bg2.jpg" width="700px" class="img-fluid" alt="">
+          </center>
+          <h1 class="p-2 text-center text-black">Activity Recognition System Based On Multisensor Data Fusion (AReM)</h1>
+        </div>
+      </div>
+      <div class="col-md-5 col-11 border border-primary-subtle bg-primary bg-opacity-25 rounded">
+        <h1 class="text-center text-black mt-3 mb-3">AReM Prediction</h1>
         <form action="/predict" class="fs-5 text-light" method="POST">
           <div class="mb-3">
-            <label class="form-label">Time</label>
-            <input type="number" class="form-control bg-transparent text-light" name="time" required>
+            <!-- <label class="form-label">Time</label> -->
+            <input type="number" class="form-control bg-black bg-opacity-25 text-light fgh" placeholder="Time" name="time" required>
           </div>
           <div class="mb-3">
-            <label class="form-label">Avg_rss12</label>
-            <input type="number" class="form-control bg-transparent text-light" name="avg_rss12" required>
+            <!-- <label class="form-label">Avg_rss12</label> -->
+            <input type="number" class="form-control bg-black bg-opacity-25 text-light fgh" placeholder="Avg_rss12" name="avg_rss12"
+              required>
           </div>
           <div class="mb-3">
-            <label class="form-label">Var_rss12</label>
-            <input type="number" class="form-control bg-transparent text-light" name="var_rss12" required>
+            <!-- <label class="form-label">Var_rss12</label> -->
+            <input type="number" class="form-control bg-black bg-opacity-25 text-light fgh" placeholder="Var_rss12" name="var_rss12"
+              required>
           </div>
           <div class="mb-3">
-            <label class="form-label">Avg_rss13</label>
-            <input type="number" class="form-control bg-transparent text-light" name="avg_rss13" required>
+            <!-- <label class="form-label">Avg_rss13</label> -->
+            <input type="number" class="form-control bg-black bg-opacity-25 text-light fgh" placeholder="Avg_rss13" name="avg_rss13"
+              required>
           </div>
           <div class="mb-3">
-            <label class="form-label">Var_rss13</label>
-            <input type="number" class="form-control bg-transparent text-light" name="var_rss13" required>
+            <!-- <label class="form-label">Var_rss13</label> -->
+            <input type="number" class="form-control bg-black bg-opacity-25 text-light fgh" placeholder="Var_rss13" name="var_rss13"
+              required>
           </div>
           <div class="mb-3">
-            <label class="form-label">Avg_rss23</label>
-            <input type="number" class="form-control bg-transparent text-light" name="avg_rss23" required>
+            <!-- <label class="form-label">Avg_rss23</label> -->
+            <input type="number" class="form-control bg-black bg-opacity-25 text-light fgh" placeholder="Avg_rss23" name="avg_rss23"
+              required>
           </div>
           <div class="mb-3">
-            <label class="form-label">Var_rss23</label>
-            <input type="number" class="form-control bg-transparent text-light" name="var_rss23" required>
+            <!-- <label class="form-label">Var_rss23</label> -->
+            <input type="number" class="form-control bg-black bg-opacity-25 text-light fgh" placeholder="Var_rss23" name="var_rss23"
+              required>
           </div>
           <center>
             <button class="btn btn-primary mt-3 mb-3" type="submit">
@@ -60,11 +76,12 @@
     </div>
   </div>
 
-    <!-- partial -->
-  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"></script>
+  <!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
